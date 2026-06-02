@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubectl - Outil de gestion Kubernetes</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: #326ce5;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        h1, h2, h3 {
+            color: #326ce5;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            background: #326ce5;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+        .btn:hover {
+            background: #2556d1;
+        }
+        pre {
+            background: #f0f0f0;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kubectl</h1>
+        <p>L'outil en ligne de commande pour Kubernetes</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Qu'est-ce que Kubectl ?</h2>
+            <p>
+                <strong>Kubectl</strong> est l'outil en ligne de commande officiel pour interagir avec les clusters Kubernetes.
+                Il permet de déployer des applications, d'inspecter et de gérer les ressources des clusters, et de visualiser les logs.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Fonctionnalités principales</h2>
+            <ul>
+                <li><strong>Déploiement d'applications</strong> : Déployer des conteneurs sur un cluster Kubernetes.</li>
+                <li><strong>Gestion des ressources</strong> : Créer, mettre à jour ou supprimer des pods, services, deployments, etc.</li>
+                <li><strong>Inspection</strong> : Voir l'état des ressources, les logs, les métriques.</li>
+                <li><strong>Exécution de commandes</strong> : Exécuter des commandes dans un conteneur.</li>
+                <li><strong>Configuration</strong> : Gérer les configurations et les secrets.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Exemples de commandes</h2>
+            <p>Voici quelques commandes de base :</p>
+            <pre>
+# Lister les pods
+kubectl get pods
+
+# Lister les services
+kubectl get services
+
+# Créer un deployment à partir d'un fichier YAML
+kubectl apply -f deployment.yaml
+
+# Voir les logs d'un pod
+kubectl logs &lt;nom-du-pod&gt;
+
+# Exécuter une commande dans un pod
+kubectl exec -it &lt;nom-du-pod&gt; -- /bin/bash
+            </pre>
+        </div>
+
+        <div class="card">
+            <h2>Installation</h2>
+            <p>Pour installer kubectl, suivez les instructions officielles selon votre système d'exploitation :</p>
+            <ul>
+                <li><a href="https://kubernetes.io/fr/docs/tasks/tools/" class="btn">Documentation officielle</a></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Ressources utiles</h2>
+            <ul>
+                <li><a href="https://kubernetes.io/fr/docs/reference/kubectl/cheatsheet/" target="_blank">Cheat Sheet Kubectl</a></li>
+                <li><a href="https://kubernetes.io/fr/docs/tutorials/kubernetes-basics/" target="_blank">Tutoriels Kubernetes</a></li>
+                <li><a href="https://github.com/kubernetes/kubernetes" target="_blank">GitHub Kubernetes</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Page créée pour présenter Kubectl - 2026</p>
+    </footer>
+</body>
+</html>
