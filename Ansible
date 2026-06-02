@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord Ansible</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f9f9f9; }
+        h1 { color: #333; text-align: center; }
+        .card { background: white; border-radius: 8px; padding: 15px; margin: 10px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .success { color: green; }
+        .failed { color: red; }
+        .changed { color: blue; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Tableau de bord Ansible</h1>
+
+    <div class="card">
+        <h2>Liens utiles</h2>
+        <ul>
+            <li><a href="/ansible/inventory" target="_blank">Inventaire</a></li>
+            <li><a href="/ansible/playbooks" target="_blank">Liste des playbooks</a></li>
+            <li><a href="/ansible/reports" target="_blank">Rapports d'exécution</a></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Dernières exécutions</h2>
+        <table>
+            <tr>
+                <th>Playbook</th>
+                <th>Date</th>
+                <th>Statut</th>
+                <th>Durée</th>
+            </tr>
+            <tr>
+                <td>deploy-web.yml</td>
+                <td>01/06/2026 14:30</td>
+                <td class="success">OK</td>
+                <td>2m 15s</td>
+            </tr>
+            <tr>
+                <td>update-db.yml</td>
+                <td>01/06/2026 10:15</td>
+                <td class="failed">Échec</td>
+                <td>1m 45s</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
