@@ -1,0 +1,32 @@
+<script>
+async function fetchZabbixData() {
+    const url = "http://ton-serveur-zabbix/api_jsonrpc.php";
+    const headers = { "Content-Type": "application/json" };
+    const data = {
+        jsonrpc: "2.0",
+        method: "host.get",
+        params: {
+            output: ["hostid", "name", "status"],
+        },
+        auth: "TON_TOKEN_API_ZABBIX",
+        id: 1
+    };
+    const response = await fetch(url, {
+        method: "POST",
+        headers: headers,
+        body: JSON.stringify(data)
+    });
+    const result = await response.json();
+    console.log(result);
+    // Affiche les hôtes dans le HTML
+    const hosts = result.result;
+    let html = "<ul>";
+    hosts.forEach(host => {
+        html += `<li>${host.name} (Statut: ${host.status})</li>`;
+    });
+    html += "</ul>";
+    document.getElementById("hosts-list").innerHTML = html;
+}
+fetchZabbixData();
+</script>
+<div id="hosts-list"></div>
