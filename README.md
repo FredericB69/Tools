@@ -26,7 +26,7 @@ Les scripts présents ici sont conçus pour :
 
 ## 🛠 Prérequis
 
-- **Système d'exploitation** : Linux, macOS (ou Windows avec WSL/Git Bash).
+- **Système d'exploitation** : Linux
 - **Bash** : Version 4.0 ou supérieure (vérifiez avec `bash --version`).
 - **Permissions** : Certains scripts nécessitent d'être exécutables (`chmod +x script.sh`).
 - **Outils externes** : Certains scripts peuvent dépendre d'outils comme `find`, `rsync`, `awk`, etc. (généralement installés par défaut).
