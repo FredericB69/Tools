@@ -30,3 +30,4 @@ Les scripts présents ici sont conçus pour :
 - **Bash** : Version 4.0 ou supérieure (vérifiez avec `bash --version`).
 - **Permissions** : Certains scripts nécessitent d'être exécutables (`chmod +x script.sh`).
 - **Outils externes** : Certains scripts peuvent dépendre d'outils comme `find`, `rsync`, `awk`, etc. (généralement installés par défaut).
+- **Dos 6.22** : Premier système utilisé en 1994 https://github.com/John-Spier/MsDos622Setup
