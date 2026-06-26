@@ -31,7 +31,6 @@ Les scripts présents ici sont conçus pour :
 - **Python** : Version 3.10 ou supérieure (vérifiez avec `python3 --version`)
 - **Permissions** : Tous les scripts nécessitent les droits root (`sudo`)
 - **Outils externes** : `apt`, `dpkg`, `snap`, `flatpak`, `clamscan` (selon le script utilisé)
-- **DOS 6.22** : Premier système utilisé en 1994 — là où tout a commencé 🖥️ https://github.com/John-Spier/MsDos622Setup
 
 ---
 
