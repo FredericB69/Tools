@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""
+""""
 linux_update.py — Mise à jour complète Debian/Ubuntu + base antivirale ClamAV
-Compatible : Debian 12/13, Ubuntu 22.04/24.04 et dérivés APT
+Compatible : Debian 12/13, Ubuntu 22.04/24.04 et dérivés APT.
 Lance directement avec : python3 linux_update.py
 Le script s'auto-relance en sudo si nécessaire.
-"""
+""""
 
 import subprocess
 import sys
