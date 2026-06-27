@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""
+""""
 proxmox_update.py — Mise à jour automatique Proxmox VE 8.x (Debian Bookworm)
 - Met à jour les dépôts et paquets PVE
 - Détecte si un nouveau kernel a été installé et redémarre si nécessaire
 - Journal horodaté dans /var/log/proxmox_update/
-- Conçu pour être planifié via cron (exécution non interactive)
+- Conçu pour être planifié via cron (exécution non interactive).
 
 Utilisation manuelle : python3 proxmox_update.py
 Cron exemple (chaque dimanche à 03h00) :
   0 3 * * 0 /usr/bin/python3 /opt/scripts/proxmox_update.py
-"""
+""""
 
 import subprocess
 import sys
