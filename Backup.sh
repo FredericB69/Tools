@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script de sauvegarde d'un dossier source vers un dossier de destination
+# Script de sauvegarde d'un dossier source vers un dossier de destination.
 # Usage: ./backup.sh [OPTIONS] <source> <destination>
 
 # --- Fonction d'affichage de l'aide ---
