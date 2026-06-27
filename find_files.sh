@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Vérifier si au moins un argument est fourni
+# Vérifier si au moins un argument est fourni.
 if [ $# -eq 0 ]; then
     echo "Usage: $0 [-n nom] [-t type] [-d répertoire]"
     echo "Options :"
