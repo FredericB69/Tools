@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""
+""""
 snap_flatpak_update.py — Mise à jour des paquets Snap et Flatpak sur Ubuntu 24.04
 Lance directement avec : python3 snap_flatpak_update.py
 Le script s'auto-relance en sudo pour Snap si nécessaire.
-"""
+""""
 
 import subprocess
 import sys
