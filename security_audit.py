@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""
+""""
 security_audit.py — Audit de sécurité local + réseau
 Compatible : Debian/Ubuntu/Proxmox
 
@@ -11,7 +11,7 @@ Usage :
 Rapports générés dans /var/log/security_audit/ :
   <date>_<cible>.log   — rapport texte lisible
   <date>_<cible>.json  — rapport structuré exploitable (jq, scripts, SIEM…)
-"""
+""""
 
 import argparse
 import json
