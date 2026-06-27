@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script de nettoyage des fichiers de logs anciens
+# Script de nettoyage des fichiers de logs anciens.
 # Usage: ./clean_logs.sh [OPTIONS] <dossier> <âge_en_jours>
 
 # --- Fonction d'affichage de l'aide ---
