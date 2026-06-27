@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""
+""""
 debian_update.py — Mise à jour complète Debian 13 + base antivirale ClamAV
 Lance directement avec : python3 debian_update.py
 Le script s'auto-relance en sudo si nécessaire.
-"""
+""""
 
 import subprocess
 import sys
